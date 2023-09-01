@@ -30,7 +30,6 @@ public class ProductPage extends TestBase {
 	{
 		wait.until(ExpectedConditions.elementToBeClickable(AddToCart_btn));
 		AddToCart_btn.click();
-		//Thread.sleep(3000);
 	}
 	
 	public String getStatusMsg() throws InterruptedException

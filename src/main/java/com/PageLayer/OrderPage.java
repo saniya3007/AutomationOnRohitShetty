@@ -57,6 +57,4 @@ public class OrderPage extends TestBase {
 	{
 		placeOrder_btn.click();
 	}
-
-
 }

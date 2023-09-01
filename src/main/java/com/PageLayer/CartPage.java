@@ -21,7 +21,6 @@ public class CartPage extends TestBase{
 	//--------action methods--------
 	public void clickOnBuyNow() throws InterruptedException
 	{
-		//wait.until(ExpectedConditions.visibilityOfAllElements(BuyNow_btn));
 		wait.until(ExpectedConditions.elementToBeClickable(BuyNow_btn));
 		Thread.sleep(5000);
 		BuyNow_btn.click();

@@ -11,7 +11,7 @@ import com.Utility.UtilClass;
 public class CartPageTest extends TestBase {
 	
 	String expected_Carturl = "https://www.rahulshettyacademy.com/client/dashboard/order?prop=%5B%226262e95ae26b7e1a10e89bf0%22%5D";
-	@Test
+	@Test(priority = 4)
 	public void buyNow() throws InterruptedException
 	{
 		product = new ProductPage();

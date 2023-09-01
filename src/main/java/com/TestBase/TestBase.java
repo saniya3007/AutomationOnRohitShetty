@@ -32,22 +32,18 @@ public class TestBase {
 	@BeforeMethod
 	public void setup() throws IOException
 	{
-		//String br="Chrome";
 		ConfigReader cr = new ConfigReader();
 		String browsername = cr.readConfig("Browser");
 		if(browsername.equalsIgnoreCase("Chrome"))
 		{
-			//WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}
 		else if(browsername.equalsIgnoreCase("Edge"))
 		{
-			//WebDriverManager.edgedriver().setup();
 			driver=new EdgeDriver();
 		}
 		else if(browsername.equalsIgnoreCase("Firefox"))
 		{
-			//WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
 		}
 		else
@@ -55,22 +51,20 @@ public class TestBase {
 			System.out.println("Please provide correct browser");
 		}
 		
-		//driver.get("https://www.rahulshettyacademy.com/client/");
 		String url = cr.readConfig("Testsiteurl");
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		//------------Steps for login--------------
 		LoginPage login = new LoginPage();
 		login.enterUsername();
 		login.enterPassword();
 		login.clickOnLogin();
+
 	}
 	
-
 	@AfterMethod
 	public void tearDown()
 	{

@@ -9,7 +9,7 @@ import com.Utility.UtilClass;
 public class LoginPageTest extends TestBase {
 	
 	String expected_Homeurl="https://www.rahulshettyacademy.com/client/auth/login";
-	@Test
+	@Test(priority = 1)
 	public void verifyLoginTest()
 	{
 	    util = new UtilClass();

@@ -1,8 +1,6 @@
 package com.Utility;
 
 
-
-
 import java.io.File;
 import java.io.IOException;
 
@@ -27,7 +25,7 @@ public class UtilClass extends TestBase {
 	}
 	
 	//----------steps to capture screenshot--------------------
-	static String path="D:\\eclipse workspace\\wingify assignment\\qawingify\\QaWingify\\Screenshots\\";
+	static String path="D:\\eclipse workspace\\AutomationOnRohitShetty\\Screenshots";
 	
 	public static void takeScreenshot(String filename)
 	{
@@ -45,8 +43,3 @@ public class UtilClass extends TestBase {
 		}
 	}
 	}
-	
-
-
-
-

@@ -10,7 +10,7 @@ import com.Utility.UtilClass;
 public class ProductPageTest extends TestBase{
 	String expected_msg = "Product Added To Cart";
 	String expected_Producturl = "https://www.rahulshettyacademy.com/client/dashboard/cart";
-		@Test(priority = 1)
+		@Test(priority = 2)
 		public void addToCart() throws InterruptedException 
 		{
 		    product = new ProductPage();
@@ -19,7 +19,7 @@ public class ProductPageTest extends TestBase{
 			Assert.assertEquals(actual_msg, expected_msg);
 		}
 		
-		@Test(priority = 2)
+		@Test(priority = 3)
 		public void goToCart()
 		{
 		    product = new ProductPage();
